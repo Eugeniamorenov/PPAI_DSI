@@ -1,0 +1,17 @@
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\bin\Debug\net8.0-windows\PPAI_DSI_sismo.exe
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\bin\Debug\net8.0-windows\PPAI_DSI_sismo.deps.json
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\bin\Debug\net8.0-windows\PPAI_DSI_sismo.runtimeconfig.json
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\bin\Debug\net8.0-windows\PPAI_DSI_sismo.dll
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\bin\Debug\net8.0-windows\PPAI_DSI_sismo.pdb
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.FormInicio.resources
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.csproj.GenerateResource.cache
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.AssemblyInfoInputs.cache
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.AssemblyInfo.cs
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.csproj.CoreCompileInputs.cache
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.dll
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\refint\PPAI_DSI_sismo.dll
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.pdb
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.genruntimeconfig.cache
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\ref\PPAI_DSI_sismo.dll
+C:\Users\Euge\Desktop\PPAI_DSI_sismo\obj\Debug\net8.0-windows\PPAI_DSI_sismo.Pantallas.PantallaCierreOrdInspeccion.resources

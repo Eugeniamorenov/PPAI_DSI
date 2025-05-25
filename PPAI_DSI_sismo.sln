@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36119.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPAI_DSI_sismo", "PPAI_DSI_sismo.csproj", "{AA95BB8C-07F1-4514-B1D5-DEB5D2156932}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA95BB8C-07F1-4514-B1D5-DEB5D2156932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA95BB8C-07F1-4514-B1D5-DEB5D2156932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA95BB8C-07F1-4514-B1D5-DEB5D2156932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA95BB8C-07F1-4514-B1D5-DEB5D2156932}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00BCB3BB-0753-4E72-9B6B-32E99577A235}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PPAI_DSI_sismo/1.0.0": {
+        "runtime": {
+          "PPAI_DSI_sismo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PPAI_DSI_sismo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
