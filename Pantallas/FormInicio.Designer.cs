@@ -1,4 +1,6 @@
-﻿namespace PPAI_DSI_sismo
+﻿using PPAI_DSI_sismo.Entidades;
+using PPAI_DSI_sismo.Gestores;
+namespace PPAI_DSI_sismo
 {
     partial class FormInicio
     {
@@ -28,19 +30,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelBienvenido = new Label();
             btnCerrarOrdInspeccion = new Button();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // labelBienvenido
-            // 
-            labelBienvenido.AutoSize = true;
-            labelBienvenido.Font = new Font("Berlin Sans FB", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelBienvenido.Location = new Point(142, 41);
-            labelBienvenido.Name = "labelBienvenido";
-            labelBienvenido.Size = new Size(233, 30);
-            labelBienvenido.TabIndex = 0;
-            labelBienvenido.Text = "Bienvenido Usuario!";
             // 
             // btnCerrarOrdInspeccion
             // 
@@ -50,15 +42,25 @@
             btnCerrarOrdInspeccion.TabIndex = 1;
             btnCerrarOrdInspeccion.Text = "Cerrar orden de inspección";
             btnCerrarOrdInspeccion.UseVisualStyleBackColor = true;
-            btnCerrarOrdInspeccion.Click += button1_Click;
+            btnCerrarOrdInspeccion.Click += buttonCerrar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Berlin Sans FB", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(163, 46);
+            label1.Name = "label1";
+            label1.Size = new Size(201, 30);
+            label1.TabIndex = 2;
+            label1.Text = "Bienvenido Usuario!";
             // 
             // FormInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(521, 276);
+            Controls.Add(label1);
             Controls.Add(btnCerrarOrdInspeccion);
-            Controls.Add(labelBienvenido);
             Name = "FormInicio";
             Text = "Bienvenido";
             ResumeLayout(false);
@@ -66,8 +68,7 @@
         }
 
         #endregion
-
-        private Label labelBienvenido;
         private Button btnCerrarOrdInspeccion;
+        private Label label1;
     }
 }

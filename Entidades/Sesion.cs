@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace PPAI_DSI_sismo.Entidades
 {
-    internal class Sesion
+    public class Sesion
     {
         public DateTime fechaHoraFin {  get; set; }
         public DateTime fechaHoraInicio { get; set; }
 
+        public Usuario usuario { get; set; }
     }
 }

@@ -8,9 +8,9 @@ using PPAI_DSI_sismo.Entidades;
 
 namespace PPAI_DSI_sismo.Gestores
 {
-    public class GestorCierreOrdenInspeccion
+    public class GestorCierreOrdInspeccion
     {
-        public List<OrdenDeInspeccion> ObtenerOrdenesDisponibles()
+        public List<OrdenDeInspeccion> buscarOrdInspeccionRI()
         {
             return new List<OrdenDeInspeccion>
             {
@@ -33,7 +33,26 @@ namespace PPAI_DSI_sismo.Gestores
              };
         }
 
-        
+        private Sesion sesionActual;
 
-    }
+        public void iniciarCU()
+        {
+            Usuario usuarioActual = new Usuario
+            {
+                nombreUsuario = "Usuario",
+                contraseña = "1234",
+            };
+
+            sesionActual = new Sesion
+            {
+                fechaHoraInicio = DateTime.Now,
+                usuario = usuarioActual
+            };
+        }
+
+        public Usuario getUsuario()
+        {
+            return sesionActual.usuario;
+        }
+            }
 }

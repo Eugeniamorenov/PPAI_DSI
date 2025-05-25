@@ -7,18 +7,20 @@ namespace PPAI_DSI_sismo
         public FormInicio()
         {
             InitializeComponent();
-            habilitarPantalla();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            PantallaCierreOrdInspeccion nuevoForm = new PantallaCierreOrdInspeccion();
-            nuevoForm.ShowDialog();   
-        }
+       
 
         public void habilitarPantalla()
         {
-            //habilitar
+            PantallaCierreOrdInspeccion nuevoForm = new PantallaCierreOrdInspeccion();
+            nuevoForm.ShowDialog();
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            habilitarPantalla();
         }
     }
 }

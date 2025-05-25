@@ -23,7 +23,7 @@ namespace PPAI_DSI_sismo.Pantallas
 
         private void PantallaCierreOrdInspeccion_Load(object sender, EventArgs e)
         {
-            var gestor = new GestorCierreOrdenInspeccion();
+            var gestor = new GestorCierreOrdInspeccion();
 
 
             cmbOrdenes.DisplayMember = "DescripcionCompleta";
@@ -73,6 +73,11 @@ namespace PPAI_DSI_sismo.Pantallas
 
         private void buttonCerrarOrden_Click(object sender, EventArgs e)
         {
+            opCerrarOrdInspeccion();
+        }
+
+        private void opCerrarOrdInspeccion()
+        {
             var confirmacion = MessageBox.Show("Está seguro de que desea cerrar esta orden?", "Confirmacion", MessageBoxButtons.YesNo,
         MessageBoxIcon.Question);
 
@@ -110,7 +115,18 @@ namespace PPAI_DSI_sismo.Pantallas
 
 
 
-                MessageBox.Show("Orden cerrada!");
+                string mensaje = $"Orden cerrada. Mail enviado.\n" +
+                 $"Número: {ordenSeleccionada.numeroOrden}\n" +
+                 $"Fecha y hora de cierre: {ordenSeleccionada.fechaHoraCierre}\n" +
+                 $"Observaciones: {ordenSeleccionada.observaciones}\n" +
+                 $"Motivos:\n";
+
+                foreach (var motivo in listaMotivos)
+                {
+                    mensaje += $"- {motivo.TipoMotivo.descripcion}: {motivo.comentario}\n";
+                }
+
+                MessageBox.Show(mensaje, "Orden cerrada");
 
 
                 this.Close();
