@@ -73,40 +73,48 @@ namespace PPAI_DSI_sismo.Pantallas
 
         private void buttonCerrarOrden_Click(object sender, EventArgs e)
         {
-            if (cmbOrdenes.SelectedItem == null)
+            var confirmacion = MessageBox.Show("Está seguro de que desea cerrar esta orden?", "Confirmacion", MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question);
+
+            if (confirmacion == DialogResult.Yes)
             {
-                MessageBox.Show("Seleccione una orden a cerrar");
-                return;
-            }
-
-
-            var ordenSeleccionada = (OrdenDeInspeccion)cmbOrdenes.SelectedItem;
-
-            List<MotivoFueraServicio> listaMotivos = new List<MotivoFueraServicio>();
-
-            foreach (DataRow row in dtMotivos.Rows)
-            {
-                var motivo = new MotivoFueraServicio
+                if (cmbOrdenes.SelectedItem == null)
                 {
-                    TipoMotivo = new MotivoTipo { descripcion = row["Motivo"].ToString() },
-                    comentario = row["Comentario"].ToString()
-                };
+                    MessageBox.Show("Seleccione una orden a cerrar");
+                    return;
+                }
 
-                listaMotivos.Add(motivo);
+
+                var ordenSeleccionada = (OrdenDeInspeccion)cmbOrdenes.SelectedItem;
+
+                List<MotivoFueraServicio> listaMotivos = new List<MotivoFueraServicio>();
+
+                foreach (DataRow row in dtMotivos.Rows)
+                {
+                    var motivo = new MotivoFueraServicio
+                    {
+                        TipoMotivo = new MotivoTipo { descripcion = row["Motivo"].ToString() },
+                        comentario = row["Comentario"].ToString()
+                    };
+
+                    listaMotivos.Add(motivo);
+                }
+
+                if (listaMotivos.Count == 0)
+                {
+                    MessageBox.Show("Debe ingresar al menos un motivo");
+                    return;
+                }
+
+                ordenSeleccionada.CerrarOrden(txtObservacion.Text.Trim(), listaMotivos);
+
+
+
+                MessageBox.Show("Orden cerrada!");
+
+
+                this.Close();
             }
-
-            if (listaMotivos.Count == 0)
-            {
-                MessageBox.Show("Debe ingresar al menos un motivo");
-                return;
-            }
-
-            ordenSeleccionada.CerrarOrden(txtObservacion.Text.Trim(), listaMotivos);
-
-            MessageBox.Show("Orden cerrada!");
-
-
-            this.Close();
         }
            
     }
